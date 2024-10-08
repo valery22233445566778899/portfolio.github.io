@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background-color: #232222;
+    background-image: url(123456789.jpg);
+}
+
+header{
+    display: flex;
+    height: 70px;
+    background-color: #232222;
+    flex-direction: row;
+    align-items: center;
+}
+
+.zagolowok{
+    font-size: 100px;
+    color: #232222;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 50px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.picture{
+    
+
+
+    width: 800px;
+    height: 478px;
+}
+
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.arrow{
+    width: 100px;
+    height: 50px;
+}
+
+.main1{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-direction: row;
+}
+
+.animation-container{
+    display: flex;
+    padding-top: 100px;
+    flex-direction: column;
+    margin: auto;
+}
+
+.arrow-container{
+    display: flex;
+    padding-top: 100px;
+    flex-direction: column;
+    margin: auto;
+}
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    font-family: 'Roboto';
+    color: #232222;    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(50) 1s 1 normal both,
+             blinkTextCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 27em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+  
+.pulse {
+    animation: pulse 1s infinite ease-in-out alternate;
+}
+@keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+}
+  
